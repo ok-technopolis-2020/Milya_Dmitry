@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>todo</title>
+    <!--[if IE]>
+	    <script>
+            document.createElement('header');
+            document.createElement('nav');
+            document.createElement('section');
+            document.createElement('article');
+            document.createElement('aside');
+            document.createElement('footer');
+	    </script>
+    <![endif]-->
+</head>
+<body>
+    <header>
+        <h1>todos</h1>
+    </header>
+    <main>
+        <ul>
+            <li class="addTask">What needs to be done?</li>
+            <li class="task">
+                <input type="checkbox" id="task1" name="task1" value="HTML" aria-label="Mark the task as done">
+                <label for="task1">HTML</label>
+            </li>
+            <li class="task">
+                <input type="checkbox" id="task2" name="task2" value="CSS" aria-label="Mark the task as done" checked>
+                <label for="task2" ><del>CSS</del></label>
+            </li>
+            <li class="task completed">
+                <input type="checkbox" id="task3" name="task3" value="JS" aria-label="Mark the task as done">
+                <label for="task3">JS</label>
+            </li>
+            <li class="task">
+                <input type="checkbox" id="task4" name="task4" value="JS tools" aria-label="Mark the task as done">
+                <label for="task4">JS tools</label>
+            </li>
+        </ul>
+        <footer>
+            <span class="counter">3 items left</span>
+            <div class="mainButtons">
+                <button class="selected" type="button" name="All" value="All" aria-label="Display all tasks">All</button>
+                <button type="button" name="Active" value="Active" aria-label="Display only active tasks">Active</button>
+                <button type="button" name="Completed" value="Completed" aria-label="Display only completed tasks">Completed</button>
+            </div>
+            <button class="clear" type="button" name="Clear" value="Clear" aria-label="Delete the completed tasks">Clear completed</button>
+        </footer>
+    </main>
+</body>
+</html>

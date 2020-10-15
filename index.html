@@ -2,51 +2,56 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
     <title>todo</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>todos</h1>
-    </header>
-    <main>
-        <div class="mainHeader">
-            <input type="button" name="switch" value="&or;" aria-label="Mark all tasks as completed / uncompleted"></button>
-            <input type="text" id="addItem" name="addItem" placeholder="What needs to be done?" aria-label="Add new item">
-        </div>        
-        <ul>
-            <li class="task">
-                <input type="checkbox" id="task1" name="task1" value="HTML" aria-label="Mark the task as done">
-                <label for="task1">HTML</label>
-                <input type="button" name="delete" value="&times;" aria-label="Delete the task"></button>
-            </li>
-            <li class="task">
-                <input type="checkbox" id="task2" name="task2" value="CSS" aria-label="Mark the task as done" checked>
-                <label for="task2" ><del>CSS</del></label>
-                <input type="button" name="delete" value="&times;" aria-label="Delete the task"></button>
-            </li>
-            <li class="task completed">
-                <input type="checkbox" id="task3" name="task3" value="JS" aria-label="Mark the task as done">
-                <label for="task3">JS</label>
-                <input type="button" name="delete" value="&times;" aria-label="Delete the task"></button>
-            </li>
-            <li class="task">
-                <input type="checkbox" id="task4" name="task4" value="JS tools" aria-label="Mark the task as done">
-                <label for="task4">JS tools</label>
-                <input type="button" name="delete" value="&times;" aria-label="Delete the task"></button>
-            </li>
-        </ul>
-        <footer>
-            <span class="counter">3 items left</span>
-            <div class="mainFilter">
-                <input type="radio" name="filter" id="All" value="All" checked aria-selected="true" aria-label="Display all tasks">
-                <label for="All">All</label>
-                <input type="radio" name="filter" id="Active" value="Active" aria-selected="false" aria-label="Display only active tasks">
-                <label for="Active">Active</label>
-                <input type="radio" name="filter" id="Completed" value="Completed" aria-selected="false" aria-label="Display only completed tasks">
-                <label for="Completed">Completed</label>
-            </div>
-            <button class="clear" type="button" name="Clear" value="Clear" aria-label="Delete the completed tasks">Clear completed</button>
-        </footer>
-    </main>
+    <div class="wrapper">
+        <header>
+            <h1>todos</h1>
+        </header>
+        <main>
+            <div class="mainHeader">
+                <input class="switchButton" type="button" name="switch" value="&or;" aria-label="Mark all tasks as completed / uncompleted"></button>
+                <input class="addItem" type="text" id="addItem" name="addItem" placeholder="What needs to be done?" aria-label="Add new item">
+            </div>        
+            <ul>
+                <li class="task">
+                    <input class="taskCheck" type="checkbox" id="task1" name="task1" value="HTML" aria-label="Mark the task as done">
+                    <label class="taskName" for="task1">HTML</label>
+                    <input class="taskDelete" type="button" name="delete" value="&times;" aria-label="Delete the task"></button>
+                </li>
+                <li class="task">
+                    <input class="taskCheck" type="checkbox" id="task2" name="task2" value="CSS" aria-label="Mark the task as done" checked>
+                    <label class="taskName" for="task2">CSS</label>
+                    <input class="taskDelete" type="button" name="delete" value="&times;" aria-label="Delete the task"></button>
+                </li>
+                <li class="task">
+                    <input class="taskCheck" type="checkbox" id="task3" name="task3" value="JS" aria-label="Mark the task as done">
+                    <label class="taskName" for="task3">JS</label>
+                    <input class="taskDelete" type="button" name="delete" value="&times;" aria-label="Delete the task"></button>
+                </li>
+                <li class="task">
+                    <input class="taskCheck" type="checkbox" id="task4" name="task4" value="JS tools" aria-label="Mark the task as done">
+                    <label class="taskName" for="task4">JS tools</label>
+                    <input class="taskDelete" type="button" name="delete" value="&times;" aria-label="Delete the task"></button>
+                </li>
+            </ul>
+            <footer>
+                <span class="counter">3 items left</span>
+                <div class="mainFilter">
+                    <input type="radio" name="filter" id="All" value="All" checked aria-selected="true" aria-label="Display all tasks">
+                    <label for="All">All</label>
+                    <input type="radio" name="filter" id="Active" value="Active" aria-selected="false" aria-label="Display only active tasks">
+                    <label for="Active">Active</label>
+                    <input type="radio" name="filter" id="Completed" value="Completed" aria-selected="false" aria-label="Display only completed tasks">
+                    <label for="Completed">Completed</label>
+                </div>
+                <button class="clear" type="button" name="Clear" value="Clear" aria-label="Delete the completed tasks">Clear completed</button>
+            </footer>
+        </main>
+    </div>
 </body>
 </html>

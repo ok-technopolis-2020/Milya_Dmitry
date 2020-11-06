@@ -101,7 +101,7 @@ h1 {
 
 .task-item {
     box-shadow: inset 0px -1px 0px #E6E6E6;
-    height: 64px;
+    min-height: 64px;
     display: flex;
     align-items: center;
 }

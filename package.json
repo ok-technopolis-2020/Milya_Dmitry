@@ -1,0 +1,19 @@
+{
+  "name": "milya_dmitry",
+  "version": "1.0.0",
+  "description": "todo-app project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ok-technopolis-2020/Milya_Dmitry.git"
+  },
+  "author": "Dmitry Milya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ok-technopolis-2020/Milya_Dmitry/issues"
+  },
+  "homepage": "https://github.com/ok-technopolis-2020/Milya_Dmitry#readme"
+}

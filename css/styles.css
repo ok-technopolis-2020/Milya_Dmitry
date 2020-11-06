@@ -56,7 +56,7 @@ h1 {
 
 .todo-app__main-controls {
     display: flex;
-    border-bottom: 1px #d1d1d1 solid;
+    border-bottom: 1px #e6e6e6 solid;
     height: 66px;
 }
 
@@ -100,7 +100,7 @@ h1 {
 }
 
 .task-item {
-    box-shadow: inset 0px -1px 0px #E6E6E6;
+    border-bottom: 1px #e6e6e6 solid;
     min-height: 64px;
     display: flex;
     align-items: center;
@@ -148,7 +148,7 @@ h1 {
 
 .todo-app__actions-bar {
     display: flex;
-    box-shadow: inset 0px 1px 0px #E6E6E6;
+    border-top: 1px #e6e6e6 solid;
     align-items: center;
     justify-content: space-between;
     height: 40px;

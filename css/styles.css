@@ -4,13 +4,13 @@ body {
     margin: 0;
 }
 
-.wrapper {
+.todo-app {
     position: relative;
     margin: 0 auto;
     width: 562px;
 }
 
-.wrapper::after, .wrapper::before {
+.todo-app::after, .todo-app::before {
     content: '';
     position: absolute;
     top: 100%;
@@ -18,14 +18,14 @@ body {
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
 }
 
-.wrapper::before {
+.todo-app::before {
     left: 2px;
     right: 2px;
     height: 5px;
     z-index: -1;   
 }
 
-.wrapper::after {
+.todo-app::after {
     left: 4px;
     right: 4px;
     height: 10px;
@@ -47,20 +47,20 @@ h1 {
     color: #CCCCCC;
 }
 
-main {
+.todo-app__frame {
     position: relative;
     background-color: #ffffff;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
     color: #808080;
 }
 
-.mainHeader {
+.todo-app__main-controls {
     display: flex;
     border-bottom: 1px #d1d1d1 solid;
     height: 66px;
 }
 
-.switchButton {
+.main-controls__switch {
     width: 60px;
     border: 0;
     background: none;
@@ -72,7 +72,7 @@ main {
     flex-shrink: 0;
 }
 
-.addItem {
+.main-controls__add-task {
     display: flex;
     align-items: center;
     box-sizing: border-box;
@@ -92,21 +92,21 @@ main {
     font-family: 'Roboto', sans-serif;
 }
 
-ul {
+.todo-app__task-list {
     min-height: 300px;
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-.task {
+.task-item {
     box-shadow: inset 0px -1px 0px #E6E6E6;
     height: 64px;
     display: flex;
     align-items: center;
 }
 
-.taskDelete {
+.task-item__delete {
     margin: -9999px 0px 0px 0px;
     border: 0;
     background: none;
@@ -119,15 +119,15 @@ ul {
     padding: 0;
 }
 
-.task:hover {
+.task-item:hover {
     background-color: #f2f2f2;
 }
 
-.taskDelete:focus, .task:hover .taskDelete {
+.task-item__delete:focus, .task-item:hover .task-item__delete {
     margin: 0px;
 }
 
-.taskCheck {
+.task-item__status-input {
     height: 30px;
     width: 30px;
     margin: 0;
@@ -135,18 +135,18 @@ ul {
     margin-right: 15px;
 }
 
-.taskCheck:checked ~ .taskName {
+.task-item__status-input:checked ~ .task-item__text {
     color: #d1d1d1;
     text-decoration: line-through;
 }
 
-.taskName {
+.task-item__text {
     flex-grow: 1;
     font-size: 25px;
     word-break: break-word;
 }
 
-footer {
+.todo-app__actions-bar {
     display: flex;
     box-shadow: inset 0px 1px 0px #E6E6E6;
     align-items: center;
@@ -155,7 +155,7 @@ footer {
     padding: 0 15px 0;
 }
 
-.clear {
+.task-clear-button {
     border: 0;
     background: none;
     box-shadow: none;

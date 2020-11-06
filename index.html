@@ -8,40 +8,42 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,300&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="wrapper">
-        <header>
-            <h1>todos</h1>
+    <div class="todo-app">
+        <header class="todo-app__header">
+            <h1 class="title">todos</h1>
         </header>
-        <main>
-            <div class="mainHeader">
-                <input class="switchButton" type="button" name="switch" value="&or;" aria-label="Mark all tasks as completed / uncompleted"></button>
-                <input class="addItem" type="text" id="addItem" name="addItem" placeholder="What needs to be done?" aria-label="Add new item">
-            </div>        
-            <ul>
-                <li class="task">
-                    <input class="taskCheck" type="checkbox" id="task1" name="task1" value="HTML" aria-label="Mark the task as done">
-                    <label class="taskName" for="task1">HTML</label>
-                    <input class="taskDelete" type="button" name="delete" value="&times;" aria-label="Delete the task"></button>
-                </li>
-                <li class="task">
-                    <input class="taskCheck" type="checkbox" id="task2" name="task2" value="CSS" aria-label="Mark the task as done" checked>
-                    <label class="taskName" for="task2">CSS</label>
-                    <input class="taskDelete" type="button" name="delete" value="&times;" aria-label="Delete the task"></button>
-                </li>
-                <li class="task">
-                    <input class="taskCheck" type="checkbox" id="task3" name="task3" value="JS" aria-label="Mark the task as done">
-                    <label class="taskName" for="task3">JS</label>
-                    <input class="taskDelete" type="button" name="delete" value="&times;" aria-label="Delete the task"></button>
-                </li>
-                <li class="task">
-                    <input class="taskCheck" type="checkbox" id="task4" name="task4" value="JS tools" aria-label="Mark the task as done">
-                    <label class="taskName" for="task4">JS tools</label>
-                    <input class="taskDelete" type="button" name="delete" value="&times;" aria-label="Delete the task"></button>
-                </li>
-            </ul>
-            <footer>
-                <span class="counter">3 items left</span>
-                <div class="mainFilter">
+        <main class="todo-app__frame">
+            <div class="todo-app__main-controls main-controls">
+                <input class="main-controls__switch" type="button" name="switch" value="&or;" aria-label="Mark all tasks as completed / uncompleted"></button>
+                <input class="main-controls__add-task" type="text" id="addItem" name="addItem" placeholder="What needs to be done?" aria-label="Add new item">
+            </div>
+            <div class="todo-app__tasks">
+                <ul class="todo-app__task-list tasks">
+                    <li class="task-item">
+                        <input class="task-item__status-input" type="checkbox" id="task1" name="task1" value="HTML" aria-label="Mark the task as done">
+                        <label class="task-item__text" for="task1">HTML</label>
+                        <input class="task-item__delete" type="button" name="delete" value="&times;" aria-label="Delete the task"></button>
+                    </li>
+                    <li class="task-item">
+                        <input class="task-item__status-input" type="checkbox" id="task2" name="task2" value="CSS" aria-label="Mark the task as done" checked>
+                        <label class="task-item__text" for="task2">CSS</label>
+                        <input class="task-item__delete" type="button" name="delete" value="&times;" aria-label="Delete the task"></button>
+                    </li>
+                    <li class="task-item">
+                        <input class="task-item__status-input" type="checkbox" id="task3" name="task3" value="JS" aria-label="Mark the task as done">
+                        <label class="task-item__text" for="task3">JS</label>
+                        <input class="task-item__delete" type="button" name="delete" value="&times;" aria-label="Delete the task"></button>
+                    </li>
+                    <li class="task-item">
+                        <input class="task-item__status-input" type="checkbox" id="task4" name="task4" value="JS tools" aria-label="Mark the task as done">
+                        <label class="task-item__text" for="task4">JS tools</label>
+                        <input class="task-item__delete" type="button" name="delete" value="&times;" aria-label="Delete the task"></button>
+                    </li>
+                </ul>
+            </div>
+            <footer class="todo-app__actions-bar actions-bar">
+                <span class="actions-bar__item task-counter">3 items left</span>
+                <div class="actions-bar__item task-filter">
                     <input type="radio" name="filter" id="All" value="All" checked aria-selected="true" aria-label="Display all tasks">
                     <label for="All">All</label>
                     <input type="radio" name="filter" id="Active" value="Active" aria-selected="false" aria-label="Display only active tasks">
@@ -49,7 +51,7 @@
                     <input type="radio" name="filter" id="Completed" value="Completed" aria-selected="false" aria-label="Display only completed tasks">
                     <label for="Completed">Completed</label>
                 </div>
-                <button class="clear" type="button" name="Clear" value="Clear" aria-label="Delete the completed tasks">Clear completed</button>
+                <button class="actions-bar__item task-clear-button" type="button" name="Clear" value="Clear" aria-label="Delete the completed tasks">Clear completed</button>
             </footer>
         </main>
     </div>

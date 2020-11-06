@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/ok-technopolis-2020/Milya_Dmitry/issues"
   },
-  "homepage": "https://github.com/ok-technopolis-2020/Milya_Dmitry#readme"
+  "homepage": "https://github.com/ok-technopolis-2020/Milya_Dmitry#readme",
+  "devDependencies": {
+    "stylelint": "^13.7.2",
+    "stylelint-config-standard": "^20.0.0"
+  }
 }

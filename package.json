@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/ok-technopolis-2020/Milya_Dmitry#readme",
   "devDependencies": {
+    "cssnano": "^4.1.10",
     "stylelint": "^13.7.2",
     "stylelint-config-standard": "^20.0.0"
   }

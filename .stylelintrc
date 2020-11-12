@@ -3,6 +3,7 @@
     "rules": {
         "unit-no-unknown": true,
         "property-no-unknown": true,
-        "block-no-empty": true
+        "block-no-empty": true,
+        "selector-nested-pattern": "^&"
     }
 }

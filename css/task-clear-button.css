@@ -1,0 +1,10 @@
+.task-clear-button {
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+  border-radius: 0;
+  color: inherit;
+  height: 25px;
+  font: inherit;
+  padding: 0;
+}

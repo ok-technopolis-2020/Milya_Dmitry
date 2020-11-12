@@ -1,0 +1,9 @@
+.actions-bar {
+  display: flex;
+  border-top: 1px #e6e6e6 solid;
+  align-items: center;
+  justify-content: space-between;
+  height: 33px;
+  padding: 3px 12px;
+  font-size: 14px;
+}

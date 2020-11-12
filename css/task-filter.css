@@ -7,14 +7,14 @@
   width: 30px;
   height: 0;
   margin-left: -30px;
+
+  &:checked + .task-filter__text {
+    border-color: #ebdfdf;
+  }
 }
 
 .task-filter__text {
   padding: 2px 6px;
   border: 1px transparent solid;
   border-radius: 3px;
-}
-
-.task-filter__input:checked + .task-filter__text {
-  border-color: #ebdfdf;
 }

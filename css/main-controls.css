@@ -1,0 +1,38 @@
+.main-controls {
+  display: flex;
+  border-bottom: 1px #e6e6e6 solid;
+  height: 64px;
+}
+
+.main-controls__switch {
+  width: 60px;
+  border: 0 none;
+  background: transparent;
+  box-shadow: none;
+  border-radius: 0;
+  padding: 0;
+  flex-shrink: 0;
+  background-image: url(../img/switch.svg);
+  background-repeat: no-repeat;
+  background-position: 15px 26px;
+}
+
+.main-controls__add-task {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  border: 0 none;
+  padding: 0;
+  background-color: transparent;
+  flex-grow: 1;
+  font-size: 24px;
+  padding-top: 4px;
+}
+
+.main-controls__add-task::placeholder {
+  font-style: italic;
+  color: #ccc;
+  font-weight: 300;
+  font-size: 24px;
+  font-family: 'Roboto', sans-serif;
+}
